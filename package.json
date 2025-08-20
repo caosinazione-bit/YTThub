@@ -10,6 +10,11 @@
     "check": "tsc",
     "db:push": "drizzle-kit push"
   },
+  {
+  "builds": [
+    { "src": "client/package.json", "use": "@vercel/static-build", "config": { "distDir": "dist" } }
+  ]
+}
   "dependencies": {
     "@google/genai": "^1.15.0",
     "@hookform/resolvers": "^3.10.0",
